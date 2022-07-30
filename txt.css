@@ -1,0 +1,33 @@
+#txt{
+    border: 10px,solid;
+    background-color: gray;
+    text-align: center;
+    height: 100px;
+}
+#download{
+    text-align: center;
+}
+
+
+
+#download{
+    border: 1px,solid;
+    background-color: gray;
+    text-align: center;
+}
+#download:hover{
+    background-color: aqua;
+}
+#download:visited{
+    color: black;
+}
+
+
+
+#down{
+    color: black;}
+#down:visited{
+    color: black;}
+#tut{
+    color:black;
+}
