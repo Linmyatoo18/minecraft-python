@@ -3,6 +3,7 @@
     background-color: gray;
     text-align: center;
     height: 100px;
+    position:;
 }
 #download{
     text-align: center;
@@ -30,3 +31,6 @@
     color: black;}
 
 
+body{
+    background:linear-gradient(to left,gray,white)
+}
