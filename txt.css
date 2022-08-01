@@ -34,3 +34,9 @@
 body{
     background:linear-gradient(to left,gray,white)
 }
+#name{
+    color: red;
+}
+#note{
+    color: red;
+}

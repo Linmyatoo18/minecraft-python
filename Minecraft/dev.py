@@ -7,6 +7,7 @@ grass = load_texture('blocks/mc_grass_block.png')
 brick = load_texture('blocks/mc_brick.png')
 dirt = load_texture('blocks/mc_dirt.png')
 sky = load_texture('blocks/sky.png')
+troll = Audio('blocks/XD.mp3', loop = False,autoplay = False)
 opt = 1
 
 name = input("Enter your name : ")
@@ -52,9 +53,9 @@ class Voxel(Button):
             if key == 'left mouse down':
                destroy(self)
             if key == 'escape':
-                exit() 
+                troll.play()
             if key == 'tab':
-                window.fullscreen = True
+                exit()
 ## ground
 for z in range(20):
     for x in range(20):
