@@ -7,6 +7,7 @@ grass = load_texture('blocks/mc_grass_block.png')
 brick = load_texture('blocks/mc_brick.png')
 dirt = load_texture('blocks/mc_dirt.png')
 sky = load_texture('blocks/sky.png')
+troll = Audio('blocks/XD.mp3', loop = False,autoplay = False)
 opt = 1
 
 name = input("\n\n\nEnter your name : ")
@@ -49,7 +50,7 @@ class Voxel(Button):
             if key == 'left mouse down':
                destroy(self)
             if key == 'escape':
-                exit()
+                troll.play()
 
 ## ground
 for z in range(20):
@@ -136,7 +137,7 @@ def input(bk):
         ui1 = Entity(parent = camera.ui, model = 'quad', scale =(0.68,0.17) , position = (0,-0.415), texture = 'blocks/grass_frame.png')
 
 
-txt = Text(text="Version 2.2", color=color.black, scale=1, x=-0.86, y=0.48, highlight_color = color.white)
+txt = Text(text="Last Version", color=color.black, scale=1, x=-0.86, y=0.48, highlight_color = color.white)
 window.exit_button.visible = False
 window.borderless = False
 txt = Text(text="Player - "+ name , color=color.white, scale=1, x=0.5, y=-0.4)
